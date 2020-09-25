@@ -31,20 +31,24 @@
 
 **Step1 : Insert 8**
 ![Insert 8](https://nesoy.github.io/assets/posts/20180831/4.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 * "루트 노드는 **블랙** 이다." 라는 규칙에 따라 블랙으로 변경된다.
 
 **Step2 : Insert 18**
 ![Insert 18](https://nesoy.github.io/assets/posts/20180831/5.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 **Step3 : Insert 5**
 ![Insert 5](https://nesoy.github.io/assets/posts/20180831/5.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 **Step4 : Insert 15**
 ![Insert 15](https://nesoy.github.io/assets/posts/20180831/7.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 * "**레드** 노드가 연속적으로 올 수 없다." 규칙을 위반되어 **Recoloring 기법** 혹은 **Restructuring 기법** 을 사용하여 해결하여야 한다.
@@ -56,6 +60,7 @@
 
 **Step5 : Insert 17**
 ![Insert 17](https://nesoy.github.io/assets/posts/20180831/8.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 * 삽입된 노드의 부모의 형제 색깔이 NULL 이기 때문에 **Restructuring** 을 통해 해결한다.
@@ -65,6 +70,7 @@
 
 **Step6 : Insert 25**
 ![Insert 25](https://nesoy.github.io/assets/posts/20180831/9.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 * "**레드** 노드가 연속적으로 나올 수 없다." 규칙을 위반하였고 삽입된 노드의 부모의 형제 노드가 **레드**인 경우에 해당하여 **Recoloring** 을 통해 해결한다.
@@ -73,6 +79,8 @@
 **Step7 : Insert 40**
 ![Insert 40](https://nesoy.github.io/assets/posts/20180831/10.png)
 
+
+
 * 삽입된 노드의 부모의 형제 색깔이 NULL 이기 때문에 **Restructuring** 으로 해결한다.
   * 삽입된 노드, 부모, 부모의 부모 노드를 오름차순으로 정렬한다.
   * 중앙 값을 부모 노드로 만들고 나머지를 자식 노드로 변환한다.
@@ -80,6 +88,7 @@
 
 **Step8 : Insert 80**
 ![Insert 80](https://nesoy.github.io/assets/posts/20180831/11.png)
+
 (출처: https://nesoy.github.io/articles/2018-08/Algorithm-RedblackTree)
 
 * "**레드** 노드가 연속적으로 나올 수 없다" 규칙을 위배했고 삽입된 노드의 부모의 형제 색깔이 **레드** 인 경우에 속해 **Recoloring** 으로 해결한다.
